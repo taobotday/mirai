@@ -148,9 +148,9 @@ users.needObject=Phải là một Object
 
 # includes/handle/handleCommand.js
 
-handleCommand.userBanned=Hiện tại bạn đang bị cấm sử dụng bot!\nLiên hệ FB: https://fb.me/NHD.JRT262 để biết thêm chi tiết.\n%1\n%2
-handleCommand.threadBanned=Hiện tại nhóm của bạn đang bị cấm sử dụng bot!\nLiên hệ FB: https://fb.me/NHD.JRT262.\n%1\n%2
-handleCommand.commandNotExist= (\_/)\n(•.• )\n(>🧠\nĐưa não cho cậu lắp vào đầu nè.\nLệnh cậu sử dụng không tồn tại, có phải là lệnh này "%1" hay không?\nNếu cậu thấy khó hiểu quá thì vui lòng liên hệ ADMIN qua FB: https://fb.me/NHD.JRT262\nXin cảm ơn!
+handleCommand.userBanned=Hiện tại bạn đang bị cấm sử dụng bot!\nLiên hệ FB: https://fb.me/I.am.Kanichi để biết thêm chi tiết.\n%1\n%2
+handleCommand.threadBanned=Hiện tại nhóm của bạn đang bị cấm sử dụng bot!\nLiên hệ FB: https://fb.me/I.am.Kanichi.\n%1\n%2
+handleCommand.commandNotExist= (\_/)\n(•.• )\n(>🧠\nĐưa não cho cậu lắp vào đầu nè.\nLệnh cậu sử dụng không tồn tại, có phải là lệnh này "%1" hay không?\nNếu cậu thấy khó hiểu quá thì vui lòng liên hệ ADMIN qua FB: https://fb.me/I.am.Kanichi\nXin cảm ơn!
 handleCommand.commandThreadBanned=Nhóm bạn đã bị cấm sử dụng lệnh "%1" vì đã có thành viên chửi bot hoặc vi phạm luật bot
 handleCommand.commandUserBanned=Bạn đã bị cấm sử dụng lệnh "%1" nên đừng cố spam nha <3
 handleCommand.threadNotAllowNSFW=Đừng sử dụng NSFW không dùng được đâu tớ khóa rồi :))
@@ -191,7 +191,7 @@ handleSchedule.exectuteError=Đã xảy ra lỗi không mong muốn trong lúc s
 
 # utils/index.js
 
-utils.throwError=[!] » Tớ không gì hết trơn á :)? Tớ vui lòng cậu hãy sử dụng %1help %2 để biết thêm hướng dẫn sử dụng bot.\nNếu cậu thấy khó hiểu quá thì vui lòng liên hệ ADMIN qua FB: https://fb.me/NHD.JRT262\nXin cảm ơn!n.executeError=Đã xảy ra lỗi không mong muốn khi đang thực thi trả lời câu hỏi bạn, lỗi: %1
+utils.throwError=[!] » Tớ không gì hết trơn á :)? Tớ vui lòng cậu hãy sử dụng %1help %2 để biết thêm hướng dẫn sử dụng bot.\nNếu cậu thấy khó hiểu quá thì vui lòng liên hệ ADMIN qua FB: https://fb.me/I.am.Kanichi\nXin cảm ơn!n.executeError=Đã xảy ra lỗi không mong muốn khi đang thực thi trả lời câu hỏi bạn, lỗi: %1
 
 # includes/handle/handleReply.js
 
