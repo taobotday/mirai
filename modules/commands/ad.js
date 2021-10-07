@@ -2,7 +2,7 @@ module.exports.config = {
   name: "ad",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "JRT",
+  credits: "Kanichi",
   description: "Kiểm tra thông tin admin bot.",
   commandCategory: "Thông tin adminbot",
   usages: "adm",
@@ -48,18 +48,19 @@ const fs = global.nodemodule["fs-extra"];
 "https://4.bp.blogspot.com/-yAExPAr7JeA/WDaBRVuJwxI/AAAAAAALb7I/Dbvda0KD5uECF3_SBjsvkl2_mqP9_BweQCLcB/s1600/AS000834_17.gif",
   ];
   var callback = () => api.sendMessage({body:`梁ADMIN BOT梁
-  👀 Tên: Nguyễn Hải Đăng (JRT)
-  ❎ Tuổi: 18
+  👀 Tên: Lục Kim An (Kanichi)
+  ❎ Tuổi: 17
   👤 Giới tính: Nam
-  🙄 Sinh ngày: 26-02-2003
-  💫 Chiều cao / cân nặng: 1m75 / 65kg
-  💘 Mối quan hệ: Hẹn hò
-  😎 Quê quán: Hà Nội
-  🤔 Nơi ở: TP.HCM
+  🙄 Sinh ngày: 22-02-2004
+  💫 Chiều cao / cân nặng: 1m6x / 48kg
+  💘 Mối quan hệ: Độc Thân
+  😎 Quê quán: Cao Bằng
+  🤔 Nơi ở: Gia Lai
   ♓ Cung: Song Ngư
-  👫 Gu: Lùn cute, tóc dài hoặc ngắn, biết nấu cơm ko biết thì tập, lo lắng quan tâm vậy là đủ :)))
-  🌸 Tính cách: Là một con người với niềm đam mê thử thách bản thân và muốn vượt qua giới hạn bản thân để đạt được mục tiêu của mình <3
-  📱 Facebook: https://fb.me/NHD.JRT262
+  👫 Gu: là con gái, biết lo lắng quan tâm vậy là đủ :)))
+  🌸 Tính cách: không cục nhưng ai cũng bảo cục vl
+  📱 Facebook: https://fb.me/I.am.Kanichi
+  🌏 Website: https://kaninfo.tk
 📢 Lưu ý cho các qtv và tv trong box: 
 - Vui lòng không spam khi sử dụng để tránh die bot
 - Không sử dụng lệnh nhiều của lệnh đó
@@ -68,11 +69,7 @@ const fs = global.nodemodule["fs-extra"];
 - Nếu bot ko hoạt động hay bị lỗi hay liên hệ qua sdt hoặc nhắn tin mess để được liên hệ trực tiếp với mình
 => Yêu mọi người nhiều lắm <3 hãy đồng hành cùng với bot và mình nhé <3
 ------------
-✔Donate:
-💳MB: Đã bẻ thẻ :)
-💳VIB: Đã bẻ thẻ :)
-📲MoMo: 0396049649
 
-----JRT----`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg")); 
+----Kanichi----`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/5.jpg")).on("close",() => callback());
    };
