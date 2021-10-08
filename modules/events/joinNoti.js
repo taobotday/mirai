@@ -15,7 +15,7 @@ module.exports.run = async function({ api, event, Users }) {
 	if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
 		api.changeNickname(`[ ${global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? "Bot của JRT <3" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 		return api.sendMessage(`» 𝙆𝙀𝙏 𝙉𝙊𝙄 𝙏𝙃𝘼𝙉𝙃 𝘾𝙊𝙉𝙂«\n\n◆━━━━━━━━━━━━━◆\n⚠𝓛𝓾𝓪̣̂𝓽 𝓑𝓸𝓽 𝓙𝓡𝓣\n1. Cấm spam nhiều lệnh trong 1 phút\n2. Cấm 2 bot trong 1 box (=ban)\n3. Hạn chế menu và help (nên copy lại)\n4. Thêm bot ko xin (=ban)\n5. Đừng có mà chửi bot sẽ bị ban vĩnh viễn ☠
-\n◆━━━━━━━━━━━━━◆\n📝Nhập #info admin sẽ có thông tin của adminbot\n📌Liên hệ khi cần thiết\n⚜QTV có thể dùng '#help rule' để xem hướng dẫn và set bảng luật box\n⚜Thành viên dùng '#rule' để xem luật box của mình\n◆━━━━━━━━━━━━━◆\nThis bot made by JRT. Thank you for using\nXin cảm ơn đã đọc...UwU\n© Admin: Nguyễn Hải Đăng`, threadID);
+\n◆━━━━━━━━━━━━━◆\n📝Nhập -ad sẽ có thông tin của adminbot\n📌Liên hệ khi cần thiết\n◆━━━━━━━━━━━━━◆\nThis bot made by Kanichi. Thank you for using\nXin cảm ơn đã đọc...UwU\n© Admin: Lục Kim An`, threadID);
 	}
 	else {
 		try {
