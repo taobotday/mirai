@@ -42,7 +42,7 @@ module.exports.run = async function({ api, event, Users }) {
 			}
 			memLength.sort((a, b) => a - b);
 			
-			(typeof threadData.customJoin == "undefined") ? msg = "🦋Hi cậu {name}.\nChào mừng cậu đã đến với {threadName}.\n🍁Từ nay {name} sẽ là thành viên sáng giá thứ {soThanhVien} của nhóm \n✅Khi vô các cậu hãy dùng lệnh để xem luật box nhé:\n👉🏻#rule" : msg = threadData.customJoin;
+			(typeof threadData.customJoin == "undefined") ? msg = "🦋Hi cậu {name}.\nChào mừng cậu đã đến với {threadName}.\n🍁Từ nay {name} sẽ là thành viên sáng giá thứ {soThanhVien} của nhóm \n" : msg = threadData.customJoin;
 			msg = msg
 			.replace(/\{name}/g, nameArray.join(', '))
 			.replace(/\{type}/g, (memLength.length > 1) ?  'Các cậu' : 'Cậu')
