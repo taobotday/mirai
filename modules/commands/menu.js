@@ -8,7 +8,7 @@ module.exports.config = {
 	usages: "[Tên module]",
 	cooldowns: 5,
 	envConfig: {
-		autoUnsend: true,
+		autoUnsend: false,
 		delayUnsend: 60
 	}
 };
