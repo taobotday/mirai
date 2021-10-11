@@ -11,7 +11,7 @@
     "PASSWORD": "",
     "OTPKEY": "",
     "BOTNAME": "Kanichi",
-    "PREFIX": "-",
+    "PREFIX": "+",
     "ADMINBOT": [
         "100008291104369",
         "USERID2"
