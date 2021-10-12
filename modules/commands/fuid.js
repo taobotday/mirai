@@ -3,7 +3,7 @@ module.exports.config = {
 	version: "1.0.0",
 	hasPermssion: 0,
 	credits: "HungCho",
-	description: "Lấy UID của link của Profile.",
+	description: "Lấy UID của link của bạn.",
 	commandCategory: "System",
 	usages: "",
 	cooldowns: 1,
