@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "kanna",
+  name: "kanna2",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "Kadeer",
