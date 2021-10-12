@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "sexxy",
+  name: "sexy",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "VĐT&NTH với sự Sp của DũngUwU",
