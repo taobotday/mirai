@@ -5,7 +5,7 @@ module.exports.config = {
     credits: "JRT",
     description: "Tag liên tục 10 lần",
     commandCategory: "Nhóm",
-    usages: "banmuoidiem",
+    usages: "[tags]",
     cooldowns: 5,
     dependencies: { }
 }
