@@ -5,7 +5,7 @@ module.exports.config = {
 	credits: "Mirai Team",
 	description: "Yêu cầu công việc/đóng góp ý kiến",
 	commandCategory: "other",
-	usages: "[add/list/remove] [your input]",
+	usages: "[add/list/delete] [your input]",
 	cooldowns: 5
 };
 
