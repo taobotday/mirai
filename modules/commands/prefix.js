@@ -23,7 +23,7 @@ module.exports.handleEvent = async ({ event, api, Currencies,Users, args, utils,
     const fs = require("fs");
     let name = await Users.getNameUser(event.senderID)
     var msg = {
-                body: `Bất ngờ chưa ${name} đây là dấu lệnh của bot này : -\n Nếu bạn cần giúp đỡ về lệnh hãy dùng -menu + lệnh để xem cách dùng`,
+                body: `Bất ngờ chưa ${name} đây là dấu lệnh của bot này : +\n Nếu bạn cần giúp đỡ về lệnh hãy dùng +menu + lệnh để xem cách dùng`,
                 attachment: fs.createReadStream(__dirname + `/noprefix/prefix.gif`)
             }
     if (event.body.toLowerCase() == "lệnh đâu"){
