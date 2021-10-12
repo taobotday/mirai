@@ -27,7 +27,7 @@ module.exports.handleEvent = async function ({ api, event, args, Users,Threads }
 module.exports.run = async function ({ event, api, args, Users,Threads, __GLOBAL }) {
 
   if (!args[0]) {
-        var countDownDate = new Date(2021, 07, 08, 21, 50, 0).getTime();
+        var countDownDate = new Date(2004, 02, 22, 0, 0, 0).getTime();
         var now = new Date().getTime();      
         var distance = countDownDate - now;      
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -55,8 +55,6 @@ module.exports.run = async function ({ event, api, args, Users,Threads, __GLOBAL
         return api.sendMessage(`💟Đếm ngày yêu bạn💟\n🍁Bắt đầu từ: ${ngay}/${thang}/${nam} \n🍂Tổng cộng: ${days} ngày ${hours} tiếng ${minutes} phút ${seconds} giây`, event.threadID, event.messageID);
  } 
  else {
-  /*const namemd = "Trần Đức Bo"
-  const name = args[3] || namemd*/
         var countDownDate = new Date(nam, thang, ngay, 0, 0, 0).getTime();
         var now = new Date().getTime();      
         var distance = now - countDownDate;      
