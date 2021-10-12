@@ -5,7 +5,7 @@ module.exports.config = {
 	credits: "HungCho",
 	description: "",
 	commandCategory: "System",
-	usages: "sendnoti [Text]",
+	usages: "",
 	cooldowns: 5,
 	info: [
 		{
