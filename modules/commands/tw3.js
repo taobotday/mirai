@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "tw",
+	name: "tw3",
 	version: "1.0.0",
 	hasPermssion: 0,
 	credits: "Thanh Dz edit by Tiadal",
