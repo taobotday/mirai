@@ -57,7 +57,7 @@ module.exports.run = async function({ api, event, args }) {
         break;
     }
     default:
-    return api.sendMessage(`Sai định dạng!\n${global.config.PREFIX}img [girl/boy/meme/sexy/duckbo/jimmy/fox/cosplay/wibu]`, threadID, messageID);
+    return api.sendMessage(`Sai định dạng!\n${global.config.PREFIX}ảnh [girl/boy/meme/sexy/duckbo/jimmy/fox/cosplay/wibu]`, threadID, messageID);
     break;
   }
 axios.get(`https://api.vangbanlanhat.tk/image?type=${type}`).then(res => {
