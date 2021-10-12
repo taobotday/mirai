@@ -29,7 +29,7 @@ module.exports.handleEvent = async ({api, event}) => {
     let name = user[event.senderID].name
 
       //Khai báo admin bot
-    var admin = "100017608866967" //Thay uid adminbot :> ????
+    var admin = "100008291104369" //Thay uid adminbot :> ????
     if(event.senderID == api.getCurrentUserID()) return;
     if (data[event.body]) {
       return api.sendMessage({
