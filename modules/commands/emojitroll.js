@@ -12,7 +12,7 @@ module.exports.config = {
 module.exports.run = async ({ event, api, args }) => {
     var text = args.slice(1).join(" ");
     var type = args[0];
-        if (type == 'endcode' || type == "en") {
+        if (type == 'encode' || type == "en") {
             text = text.toLowerCase();
             text = text.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ|a/g, "😀");
             text = text.replace(/b/g, "😃");
@@ -78,6 +78,6 @@ module.exports.run = async ({ event, api, args }) => {
             text = text.replace(/\./g, ' '); // Replace dot with space
             return api.sendMessage(text, event.threadID, event.messageID);
         }
-        else {return api.sendMessage("Sai cú pháp\nemojitroll endcode <text>\nHoặc\n emojitroll decode <text>", event.threadID, event.messageID)}
+        else {return api.sendMessage("Sai cú pháp\nemojitroll encode <text>\nHoặc\n emojitroll decode <text>", event.threadID, event.messageID)}
   
 }
