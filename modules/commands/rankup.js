@@ -2,9 +2,8 @@ module.exports.config = {
 	name: "rankup",
 	version: "1.2",
 	hasPermssion: 1,
-	credits: "⚡️D-Jukie",
 	description: "Đếm kinh nghiệm cho việc check tương tác trong hệ thống dữ liệu bot/nhóm",
-	commandCategory: "Cấu hình",
+	commandCategory: "1",
 	cooldowns: 1
 };
 
