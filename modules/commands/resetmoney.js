@@ -1,10 +1,8 @@
 module.exports.config = {
     name: "resetmoney",
     version: "1.0.0",
-    hasPermssion: 1,
-    credits: "manhIT",
-    description: "Reset số tiền của cả nhóm về 0",
-    commandCategory: "group",
+    hasPermssion: 2,
+    description: "Reset money",
     usages: "[cc], [del], [all]",
     cooldowns: 5
 };
@@ -21,5 +19,5 @@ module.exports.run = async ({ api, event, Currencies }) => {
             }
         }
     }
-    return api.sendMessage("Số money của thành viên nhóm đã được reset về mức 0 !", event.threadID);
+    return api.sendMessage("done", event.threadID);
 }
