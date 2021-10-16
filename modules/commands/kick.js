@@ -2,9 +2,8 @@ module.exports.config = {
 	name: "kick",
 	version: "1.0.1", 
 	hasPermssion: 1,
-	credits: "Mirai Team",
 	description: "Xoá người bạn cần xoá khỏi nhóm bằng cách tag",
-	commandCategory: "other", 
+	commandCategory: "1", 
 	usages: "[tag]", 
 	cooldowns: 0,
 };
