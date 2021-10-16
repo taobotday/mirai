@@ -1,10 +1,8 @@
 ﻿module.exports.config = {
-    name: "resetexp",
+    name: "rl",
     version: "1.0.0",
     hasPermssion: 2,
-    credits: "Thùy",
-    description: "cc del all",
-    commandCategory: "admin",
+    description: "reset level",
     usages: "[cc], [del], [all]",
     cooldowns: 5
 };
