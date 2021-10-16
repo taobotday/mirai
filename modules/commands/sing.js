@@ -2,10 +2,9 @@ module.exports.config = {
 	name: "sing",
 	version: "1.0.0",
 	hasPermssion: 0,
-	credits: "CatalizCS",//mod sing by Jukie
 	description: "Phát video thông qua link YouTube hoặc từ khoá tìm kiếm",
-	commandCategory: "Phương tiện",
-	usages: "[Text]",
+	commandCategory: "1",
+	usages: "[text]",
 	cooldowns: 10,
 	dependencies: {
 		"ytdl-core": "",
