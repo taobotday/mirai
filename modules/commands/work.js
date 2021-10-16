@@ -6,7 +6,7 @@ module.exports.config = {
 	commandCategory: "1",
     cooldowns: 5,
     envConfig: {
-        cooldownTime: 300000
+        cooldownTime: 600000
     }
 };
 
