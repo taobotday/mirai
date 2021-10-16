@@ -2,9 +2,8 @@ module.exports.config = {
 	name: "say",
 	version: "1.0.1",
 	hasPermssion: 0,
-	credits: "Mirai Team",
 	description: "Khiến bot trả về file âm thanh của chị google thông qua văn bản",
-	commandCategory: "media",
+	commandCategory: "1",
 	usages: "[ru/en/ko/ja] [Text]",
 	cooldowns: 5,
 	dependencies: {
