@@ -2,9 +2,8 @@ module.exports.config = {
     name: "pay",
     version: "1.0.1",
     hasPermssion: 0,
-    credits: "Mirai Team",
     description: "Chuyển tiền cho người khác",
-    commandCategory: "economy",
+    commandCategory: "1",
     usages: "[tag người dùng] [Số tiền cần chuyển]",
     cooldowns: 5
 };
@@ -17,7 +16,7 @@ module.exports.languages = {
         "invalidInput": "[ PAY ] Số tiền bạn nhập không phù hợp để chuyển",
         "payerNotExist": "[ PAY ] Hiện tại bạn không tồn tại trong hệ thống, vui lòng chờ 5 giây sau đó thử lại",
         "notEnoughMoney": "[ PAY ] Bạn không đủ tiền để thực hiện giao dịch!",
-        "paySuccess": "[ PAY ] Đã chuyển thành công %1$ (15% tax) cho người dùng: %2",
+        "paySuccess": "[ PAY ] Đã chuyển thành công %1$ (1% phí) cho người dùng: %2",
         "error": "[ PAY ] Đã xảy ra lỗi không mong muốn trong lúc thực hiện giao dịch"
     },
     "en": {
@@ -50,7 +49,7 @@ module.exports.run = async function ({ api, event, Currencies, Users, args, getT
     if (!global.data.allCurrenciesID.includes(targetID)) return api.sendMessage(getText("userNotExist"), threadID, messageID);
 
     if (isNaN(moneyPay) && moneyPay < 1) return api.sendMessage(getText("invalidInput"), threadID, messageID);
-    const taxed = (parseInt(moneyPay) * 15) / 100;
+    const taxed = (parseInt(moneyPay) * 1) / 100;
     
     try {
         const moneyPayer = (await getData(senderID)).money;
