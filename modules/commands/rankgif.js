@@ -4,9 +4,7 @@ module.exports.config = {
     name: "rankgif",
     version: "1.0.0",
     hasPermssion: 0,
-    credits: "Siêu Đáng Yêu",
     description: "Lấy rank hiện tại của bạn trên hệ thống bot kèm khung theo level của bạn, remake rank_card from canvacord",
-    commandCategory: "Nhóm",
     cooldowns: 5,
     dependencies: {
         "fs-extra": "",
