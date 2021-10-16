@@ -2,24 +2,23 @@ module.exports.config = {
 	name: "daily",
 	version: "1.0.2",
 	hasPermssion: 0,
-	credits: "Mirai Team",
-	description: "Nhận 200 coins mỗi ngày!",
-	commandCategory: "economy",
+	description: "Nhận 5000 coins mỗi giờ!",
+	commandCategory: "1",
     cooldowns: 5,
     envConfig: {
-        cooldownTime: 43200000,
-        rewardCoin: 200
+        cooldownTime: 3600000,
+        rewardCoin: 5000
     }
 };
 
 module.exports.languages = {
     "vi": {
         "cooldown": "Bạn đang trong thời gian chờ\nVui lòng thử lại sau: %1 giờ %2 phút %3 giây!",
-        "rewarded": "Bạn đã nhận %1$, để có thể tiếp tục nhận, vui lòng quay lại sau 12 tiếng"
+        "rewarded": "Bạn đã nhận %1$, để có thể tiếp tục nhận, vui lòng quay lại sau 1 tiếng"
     },
     "en": {
         "cooldown": "You received today's rewards, please come back after: %1 hours %2 minutes %3 seconds.",
-        "rewarded": "You received %1$, to continue to receive, please try again after 12 hours"
+        "rewarded": "You received %1$, to continue to receive, please try again after 1 hours"
     }
 }
 
