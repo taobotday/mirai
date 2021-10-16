@@ -2,11 +2,10 @@ module.exports.config = {
 	name: "ping",
 	version: "1.0.4",
 	hasPermssion: 1,
-	credits: "Mirai Team",
 	description: "tag toàn bộ thành viên",
-	commandCategory: "system",
-	usages: "[Text]",
-	cooldowns: 80
+	commandCategory: "1",
+	usages: "[text]",
+	cooldowns: 0
 };
 
 module.exports.run = async function({ api, event, args }) {
