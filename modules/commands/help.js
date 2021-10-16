@@ -2,9 +2,7 @@ module.exports.config = {
 	name: "help",
 	version: "1.0.1",
 	hasPermssion: 0,
-	credits: "Mirai Team",
 	description: "Hướng dẫn cho người mới",
-	commandCategory: "system",
 	usages: "[Tên module]",
 	cooldowns: 5
 };
@@ -28,12 +26,12 @@ module.exports.handleEvent = function ({ api, event }) {
 
 	const prefix = (threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX;
 
-	return api.sendMessage(`「 ${command.config.name} 」\n${command.config.description}\n\n❯ Cách sử dụng: ${prefix}${command.config.name} ${(command.config.usages) ? command.config.usages : ""}\n❯ Thuộc nhóm: ${command.config.commandCategory}\n❯ Thời gian chờ: ${command.config.cooldowns} giây(s)\n❯ Quyền hạn: ${((command.config.hasPermssion == 0) ? "Người dùng" : (command.config.hasPermssion == 1) ? "Quản trị viên" : "Người vận hành bot" )}\n\n» Module code by ${command.config.credits} «`, threadID, messageID);
+	return api.sendMessage(`「 ${command.config.name} 」\n${command.config.description}\n\n❯ Cách sử dụng: ${prefix}${command.config.name} ${(command.config.usages) ? command.config.usages : ""}\n❯ Thời gian chờ: ${command.config.cooldowns} giây(s)\n❯ Quyền hạn: ${((command.config.hasPermssion == 0) ? "Người dùng" : (command.config.hasPermssion == 1) ? "Quản trị viên" : "Người vận hành bot" )}`, threadID, messageID);
 }
 
 module.exports.run = function({ api, event, args }) {
 	  var a = function (a) { api.sendMessage(a, event.threadID); }
-a("[💙] Đã Gửi Toàn Bộ Lệnh Tới Bạn UwU. [❗]\n\ - Check Tin Nhắn Chờ Đi kaka [❗]");
+a();
 	const { commands } = global.client;
 	const { threadID, messageID } = event;
 	const command = commands.get((args[0] || "").toLowerCase());
@@ -46,14 +44,14 @@ a("[💙] Đã Gửi Toàn Bộ Lệnh Tới Bạn UwU. [❗]\n\ - Check Tin Nh�
 			if (!group.some(item => item.group.toLowerCase() == commandConfig.config.commandCategory.toLowerCase())) group.push({ group: commandConfig.config.commandCategory.toLowerCase(), cmds: [commandConfig.config.name] });
 			else group.find(item => item.group.toLowerCase() == commandConfig.config.commandCategory.toLowerCase()).cmds.push(commandConfig.config.name);
 		}
-		group.forEach(commandGroup => msg += `「 ${commandGroup.group.charAt(0).toUpperCase() + commandGroup.group.slice(1)} 」\n${commandGroup.cmds.join(', ')}\n\n`);
+		group.forEach(commandGroup => msg += `「 ${commandGroup.group.charAt(0).toUpperCase() + commandGroup.group.slice(1)} 」\n${commandGroup.cmds.join(', ')}\n\n\n`);
 		
-		return api.sendMessage(msg + `[ Sử dụng: "${(threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX}help từng lệnh ở trên" để xem chi tiết cách sử dụng! | Hiện tại đang có ${commands.size} lệnh có thể sử dụng trên bot này ]`, event.senderID, (err, info) =>
+		return api.sendMessage(msg + `Sử dụng: "${(threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX}help từng lệnh ở trên" để xem chi tiết cách sử dụng! | Hiện tại đang có ${commands.size} lệnh có thể sử dụng trên bot này!`, event.senderID, (err, info) =>
         setTimeout(() => {api.unsendMessage(info.messageID) } , 45000));
 
 
 	}
 	const prefix = (threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX;
 
-	return api.sendMessage(`「 ${command.config.name} 」\n${command.config.description}\n\n❯ Cách sử dụng: ${prefix}${command.config.name} ${(command.config.usages) ? command.config.usages : ""}\n❯ Thuộc nhóm: ${command.config.commandCategory}\n❯ Thời gian chờ: ${command.config.cooldowns} giây(s)\n❯ Quyền hạn: ${((command.config.hasPermssion == 0) ? "Người dùng" : (command.config.hasPermssion == 1) ? "Quản trị viên" : "Người vận hành bot" )}\n\n» Module code by ${command.config.credits} «`, threadID, messageID);
+	return api.sendMessage(`「 ${command.config.name} 」\n${command.config.description}\n\n❯ Cách sử dụng: ${prefix}${command.config.name} ${(command.config.usages) ? command.config.usages : ""}\n❯ Thời gian chờ: ${command.config.cooldowns} giây(s)\n❯ Quyền hạn: ${((command.config.hasPermssion == 0) ? "Người dùng" : (command.config.hasPermssion == 1) ? "Quản trị viên" : "Người vận hành bot" )}`, threadID, messageID);
       }
