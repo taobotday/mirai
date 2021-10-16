@@ -81,7 +81,7 @@ module.exports.run = async ({ event, api, Currencies, getText }) => {
             getText("job14"),
             getText("job15")
         ];
-        const amount = Math.floor(Math.random() * 600);
+        const amount = Math.floor(Math.random() * 1000);
         return api.sendMessage(getText("rewarded", job[Math.floor(Math.random() * job.length)], amount), threadID, async () => {
             await Currencies.increaseMoney(senderID, parseInt(amount));
             data.workTime = Date.now();
