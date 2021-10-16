@@ -2,10 +2,9 @@ module.exports.config = {
 	name: "balance",
 	version: "1.0.2",
 	hasPermssion: 0,
-	credits: "Mirai Team",
 	description: "Kiểm tra số tiền của bản thân hoặc người được tag",
-	commandCategory: "economy",
-	usages: "[Tag]",
+	commandCategory: "1",
+	usages: "[tag]",
 	cooldowns: 5
 };
 
