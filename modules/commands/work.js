@@ -2,12 +2,11 @@ module.exports.config = {
 	name: "work",
 	version: "1.0.1",
 	hasPermssion: 0,
-	credits: "Mirai Team",
 	description: "Có làm thì mới có ăn!",
-	commandCategory: "Economy",
+	commandCategory: "1",
     cooldowns: 5,
     envConfig: {
-        cooldownTime: 1200000
+        cooldownTime: 300000
     }
 };
 
