@@ -3,9 +3,7 @@ module.exports.config = {
     name: "console",
     version: "1.0.0",
     hasPermssion: 2,
-    credits: "D-Jukie",
-    description: "Console bớt nhàm chán hơn",
-    commandCategory: "Admin",
+    description: "",
     usages: "",
     cooldowns: 5
 };
